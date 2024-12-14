@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const connectDB = async () => {
     try {
-        const dbUri = `mongodb+srv://user:${process.env.MONGODB_PASSWORD}@cluster0.rgdjq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+        const dbUri = process.env.MONGO_URI; // Use the MONGO_URI from the .env file
         await mongoose.connect(dbUri);
         console.log('Connected to MongoDB');
     } catch (err) {
