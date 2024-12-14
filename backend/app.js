@@ -16,7 +16,7 @@ const app = express();
 
 app.use(
   cors({
-      origin: 'https://lovely-biscuit-d25443.netlify.app',
+      origin: 'https://sweet-quokka-1b0682.netlify.app/',
       methods: 'GET,POST,PUT,DELETE',
       allowedHeaders: 'Content-Type,Authorization',
   })
