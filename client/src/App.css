@@ -1,9 +1,9 @@
 
 :root {
-  --primary-color: #ff6f61; /* Coral */
-  --secondary-color: #f0f0f0; /* Light Grey */
-  --highlight-color: #ffd700; /* Gold */
-  --input-bg-color: #ffffff; /* White */
+  --primary-color: #ff6f61; 
+  --secondary-color: #f0f0f0;
+  --highlight-color: #ffd700; 
+  --input-bg-color: #ffffff; 
   --button-bg-color: #ff6f61;
   --button-hover-bg-color: #ff3d2f;
   --text-color: #333;
@@ -12,7 +12,7 @@
   --background-color: #111;
 }
 
-/* General Body Styles */
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -20,7 +20,7 @@ body {
   color: var(--text-color, #fff);
 }
 
-/* App Layout */
+
 /* .App {
   display: flex;
   flex-direction: column;
@@ -30,11 +30,11 @@ body {
 
 header,
 footer {
-  flex-shrink: 0; /* Prevent shrinking */
+  flex-shrink: 0; 
 }
 
 main {
-  flex-grow: 1; /* Fill remaining space */
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,4 +44,4 @@ main {
   box-sizing: border-box;
 }
 
-/* Menu Styles */
+

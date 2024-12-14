@@ -13,20 +13,19 @@ function Create() {
 
   console.log('menus', menus);
 
-  // Fetch menus when the component mounts
   useEffect(() => {
     const fetchMenus = async () => {
       try {
         const response = await axios.get('https://deepnetsoft-restaurant.onrender.com/menus');
-        setMenus(response.data.menus); // Save the fetched menus to state
+        setMenus(response.data.menus); 
       } catch (error) {
         console.error('Error fetching menus:', error);
         alert('Failed to fetch menus. Please try again.');
       }
     };
 
-    fetchMenus(); // Call the function
-  }, []); // Empty dependency array
+    fetchMenus();
+  }, []); 
 
   const handleCreateMenu = async () => {
     if (menuName && menuDescription) {

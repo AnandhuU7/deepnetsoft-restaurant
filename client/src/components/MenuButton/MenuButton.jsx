@@ -5,7 +5,7 @@ const MenuButtons = () => {
   return (
     <div className="menu-buttons">
     <button>Food</button>
-    <button className="drinks-button">Drinks</button> {/* Drinks button with specific styles */}
+    <button className="drinks-button">Drinks</button> 
     <button>Brunch</button>
   </div>
   

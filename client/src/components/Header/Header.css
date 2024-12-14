@@ -1,41 +1,47 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-menu li {
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .nav-menu li:hover {
-    color: #00bfff;
-  }
-/* Style for the Admin button */
 
-.link-items a{
-  color: #eff6fa; /* Change this to your desired button color */
-  text-decoration: none; /* Underline the text */
-  /* Optional padding for better appearance */ /* Optional for bold text */
-  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
 }
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-menu li:hover {
+  color: #00bfff;
+}
+
+
+.link-items a {
+  color: #eff6fa;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+
 .link-items a:hover {
-  color: #00bfff; /* Change to desired hover color 
-  text-decoration: none; /* Remove underline on hover */
+  color: #00bfff;
 }
-  
+
+
+.nav-menu li:first-child a {
+  color: white; 
+  text-decoration: none; 
+}

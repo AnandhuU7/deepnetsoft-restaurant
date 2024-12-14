@@ -1,10 +1,10 @@
 .footer {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    padding: 10px 20px; /* Padding for spacing */
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: space-between; /* Space between copyright and links */
-    align-items: center; /* Vertically center the items */
+    background-color: #000; 
+    color: #fff; 
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
   }
   
   .copyright {
@@ -12,27 +12,27 @@
   }
   
   .links a {
-    color: #fff; /* White link color */
-    text-decoration: none; /* Remove underline */
-    margin-left: 15px; /* Add space between links */
+    color: #fff; 
+    text-decoration: none; 
+    margin-left: 15px; 
   }
   
-  /* Media query for mobile view */
+ 
   @media (max-width: 768px) {
     .footer {
-      flex-direction: row; /* Ensure content is in a row layout */
-      justify-content: center; /* Center the content */
-      align-items: center; /* Vertically center the content */
-      flex-wrap: wrap; /* Allow wrapping if needed */
+      flex-direction: row; 
+      justify-content: center;
+      align-items: center; 
+      flex-wrap: wrap; 
     }
   
     .copyright,
     .links {
-      margin: 5px 0; /* Adjust spacing between elements for mobile */
+      margin: 5px 0; 
     }
   
     .links a {
-      margin-left: 10px; /* Reduced space between links on smaller screens */
+      margin-left: 10px; 
     }
   }
   

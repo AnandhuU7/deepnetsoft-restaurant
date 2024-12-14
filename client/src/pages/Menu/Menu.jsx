@@ -4,21 +4,21 @@ import './Menu.css';
 
 const Menu = () => {
   const [menus, setMenus] = useState([]);
-  const [selectedMenu, setSelectedMenu] = useState(null); // Track selected menu
-  const [menuItems, setMenuItems] = useState([]); // Track menu items
+  const [selectedMenu, setSelectedMenu] = useState(null); 
+  const [menuItems, setMenuItems] = useState([]); 
 
-  // Fetch menus when the component mounts
+  
   useEffect(() => {
     const fetchMenus = async () => {
       try {
         const response = await axios.get('https://deepnetsoft-restaurant.onrender.com/menus');
-        setMenus(response.data.menus); // Save the fetched menus to state
+        setMenus(response.data.menus); 
 
-        // If menus exist, set the first menu as the default selected menu and fetch its items
+       
         if (response.data.menus.length > 0) {
           const firstMenu = response.data.menus[0];
-          setSelectedMenu(firstMenu._id); // Set the first menu as selected
-          fetchMenuItems(firstMenu._id); // Fetch menu items for the first menu
+          setSelectedMenu(firstMenu._id); 
+          fetchMenuItems(firstMenu._id); 
         }
       } catch (error) {
         console.error('Error fetching menus:', error);
@@ -26,24 +26,24 @@ const Menu = () => {
       }
     };
 
-    fetchMenus(); // Call the function
+    fetchMenus(); 
   }, []);
 
-  // Fetch menu items for a selected menu
+ 
   const fetchMenuItems = async (menuId) => {
     try {
       const response = await axios.get(`https://deepnetsoft-restaurant.onrender.com/menus/${menuId}`);
-      setMenuItems(response.data.menuItems); // Save menu items to state
+      setMenuItems(response.data.menuItems); 
     } catch (error) {
       console.error('Error fetching menu items:', error);
       alert('Failed to fetch menu items. Please try again.');
     }
   };
 
-  // Handle menu click to fetch respective menu items
+  
   const handleMenuClick = (menuId) => {
-    setSelectedMenu(menuId); // Update selected menu
-    fetchMenuItems(menuId); // Fetch menu items for the selected menu
+    setSelectedMenu(menuId); 
+    fetchMenuItems(menuId); 
   };
 
   return (
@@ -53,7 +53,7 @@ const Menu = () => {
         {menus.map((menu) => (
           <div
             key={menu._id}
-            onClick={() => handleMenuClick(menu._id)} // Handle click on menu
+            onClick={() => handleMenuClick(menu._id)} 
             className={`menu-card ${selectedMenu === menu._id ? 'selected' : ''}`}
           >
             <h3>{menu.name}</h3>

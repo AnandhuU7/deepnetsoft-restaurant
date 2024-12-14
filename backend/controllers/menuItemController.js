@@ -4,8 +4,6 @@ const mongoose = require('mongoose');
 
 const createMenuItem = async (req, res) => {
     const { name, description, price, menu } = req.body;
-
-    // Validate menu ID
     if (!mongoose.isValidObjectId(menu)) {
         return res.status(400).json({ message: 'Invalid menu ID' });
     }
