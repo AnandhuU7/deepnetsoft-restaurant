@@ -5,10 +5,10 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Technologies Used](#technologies-used)
-- [Folder Structure](#folder-structure)
 - [API Endpoints](#api-endpoints)
 - [How to Use](#how-to-use)
 - [Future Enhancements](#future-enhancements)
+- [Deployment](#deployment)
 
 ---
 
@@ -125,7 +125,7 @@ This project is a **DEEPNET-SOFT-RESTAURANT** application for managing menus and
 ## Deployment
 
 1. Frontend is deployed on Netlify: https://stunning-syrniki-12e94d.netlify.app/
-2. Backend is deployed on Render:  https://deepnetsoft-restaurant.onrender.com
+2. Backend is deployed on Render: 
 ## Important:
 Backend deployment is free, so run the backend first:
 Open Backend URL in your browser to initialize the backend.
