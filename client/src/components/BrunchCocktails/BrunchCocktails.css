@@ -1,0 +1,41 @@
+
+.container {
+    text-align: center;
+    width: 70%; /* Adjust this percentage to decrease the width of the container */
+    margin: 20px auto; /* Centers the container horizontally */
+    
+    background-position: center; 
+    border: 1px solid #ccc; /* Add outer border to the container */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cocktail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px; /* Add padding inside the cocktail section */
+}
+
+.cocktail-name {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.cocktail-price {
+    font-weight: bold;
+}
+
+.cocktail-details {
+    font-size: 14px;
+    color: #666; /* Gray color for details */
+    margin-top: 5px;
+}

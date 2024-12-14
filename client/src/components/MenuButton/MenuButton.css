@@ -1,0 +1,45 @@
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 6px 20px; /* Reduced top and bottom padding to decrease height */
+    background-image: url('../../assets/images/button-background.png'); /* Path to background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center top; /* Position the image starting from the top */
+    background-repeat: no-repeat; /* Prevent repeating */
+    color: #fff;
+    height: auto; /* Automatically adjust height based on content */
+  }
+  
+  .menu-buttons button {
+    background-color: #000; /* Default black background */
+    color: #fff; /* White text */
+    border: 2px solid transparent; /* Start with a transparent border */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for other buttons (Food, Brunch) */
+  .menu-buttons button:not(.drinks-button):hover {
+    background-color: #000; /* Black background stays the same */
+    color: #fff; /* White text stays the same */
+    border-color: #00bfff; /* Blue border appears */
+  }
+  
+  /* Specific styles for the "Drinks" button */
+  .menu-buttons button.drinks-button {
+    background-color: #00bfff; /* Blue background */
+    color: #fff; /* White text */
+    border-color: #00bfff; /* Blue border */
+  }
+  
+  /* Hover effect for the "Drinks" button */
+  .menu-buttons button.drinks-button:hover {
+    background-color: #00bfff; /* Keep the blue background on hover */
+    color: #fff; /* White text stays */
+    border-color: #00bfff; /* Blue border stays */
+  }
+  

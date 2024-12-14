@@ -1,0 +1,47 @@
+
+:root {
+  --primary-color: #ff6f61; /* Coral */
+  --secondary-color: #f0f0f0; /* Light Grey */
+  --highlight-color: #ffd700; /* Gold */
+  --input-bg-color: #ffffff; /* White */
+  --button-bg-color: #ff6f61;
+  --button-hover-bg-color: #ff3d2f;
+  --text-color: #333;
+  --border-radius: 8px;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --background-color: #111;
+}
+
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color, #000);
+  color: var(--text-color, #fff);
+}
+
+/* App Layout */
+/* .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+} */
+
+header,
+footer {
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+main {
+  flex-grow: 1; /* Fill remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Menu Styles */
