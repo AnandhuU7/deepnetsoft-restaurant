@@ -17,7 +17,7 @@ function Create() {
   useEffect(() => {
     const fetchMenus = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/menus');
+        const response = await axios.get('https://deepnetsoft-restaurant.onrender.com/menus');
         setMenus(response.data.menus); // Save the fetched menus to state
       } catch (error) {
         console.error('Error fetching menus:', error);
@@ -31,7 +31,7 @@ function Create() {
   const handleCreateMenu = async () => {
     if (menuName && menuDescription) {
       try {
-        const response = await axios.post('http://localhost:5000/menus/create', {
+        const response = await axios.post('https://deepnetsoft-restaurant.onrender.com/menus/create', {
           name: menuName,
           description: menuDescription,
         });
@@ -53,7 +53,7 @@ function Create() {
   const handleCreateMenuItem = async () => {
     if (selectedMenu && menuItemName && menuItemDescription && menuItemPrice) {
       try {
-        const response = await axios.post('http://localhost:5000/menus/menuitem/create', {
+        const response = await axios.post('https://deepnetsoft-restaurant.onrender.com/menus/menuitem/create', {
           name: menuItemName,
           description: menuItemDescription,
           price: parseFloat(menuItemPrice),

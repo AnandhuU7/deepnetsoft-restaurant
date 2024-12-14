@@ -11,7 +11,7 @@ const Menu = () => {
   useEffect(() => {
     const fetchMenus = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/menus');
+        const response = await axios.get('https://deepnetsoft-restaurant.onrender.com/menus');
         setMenus(response.data.menus); // Save the fetched menus to state
 
         // If menus exist, set the first menu as the default selected menu and fetch its items
@@ -32,7 +32,7 @@ const Menu = () => {
   // Fetch menu items for a selected menu
   const fetchMenuItems = async (menuId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/menus/${menuId}`);
+      const response = await axios.get(`https://deepnetsoft-restaurant.onrender.com/menus/${menuId}`);
       setMenuItems(response.data.menuItems); // Save menu items to state
     } catch (error) {
       console.error('Error fetching menu items:', error);
